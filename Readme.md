@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ivan Suhinin](https://up.htmlacademy.ru/htmlcss/30/user/1605865).
-* Наставник: `[Андрей Островский](https://htmlacademy.ru/profile/grandmaus)`.
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
