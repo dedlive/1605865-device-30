@@ -2,166 +2,206 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body>
   <header>
     <h1>Device</h1>
-    <nav id="additional-menu">
-      <ul>
-        <li>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="top-search" placeholder="Поиск по сайту">
-          </form>
-        </li>
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
-    <nav id="mainmenu">
-      <ul>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    <div id="slider">
+    <ul>
+      <li>
+        <!-- <form action="https://echo.htmlacademy.ru" method="post"> -->
+        <input type="text" name="top-search" placeholder="Поиск по сайту" />
+        <!-- </form> -->
+      </li>
+      <li>
+        <a href="#">Войти</a>
+      </li>
+      <li>
+        <a href="#">Сравнить</a>
+      </li>
+      <li>
+        <a href="#">Корзина</a>
+      </li>
+    </ul>
 
+    <ul>
+      <li>
+        <a href="catalog.html">Каталог товаров</a></li>
+      <li>
+        <a href="#">Доставка</a>
+      </li>
+      <li>
+        <a href="#">Гарантия</a>
+      </li>
+      <li>
+        <a href="#">Контакты</a>
+      </li>
+    </ul>
+
+
+    <!-- Слайдер -->
+    <ul>
       <!-- первый слайд -->
-      <div>
-        <img src="https://via.placeholder.com/384x486" alt="Делай селфи как Бен Стиллер!">
+      <li>
+        <img src="https://via.placeholder.com/384x486" alt="Делай селфи как Бен Стиллер!" />
         <div>01</div>
-        <div class="slide-title">Делай селфи как Бен Стиллер!</div>
+        <h2>Делай селфи как Бен Стиллер!</h2>
         <a href="#">Подробнее</a>
-        <div>
-          <div>8.5 м</div>
-          <div>Длина палки</div>
-        </div>
-        <div>
-          <div>5 кг</div>
-          <div>Вес палки</div>
-        </div>
-        <div>
-          <div>Карбон</div>
-          <div>Материал</div>
-        </div>
-      </div>
+        <table>
+          <tbody>
+            <tr>
+              <th>8.5 м</th>
+              <th>5 кг</th>
+              <th>Карбон</th>
+            </tr>
+            <tr>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
 
       <!-- второй слайд -->
-      <div>
-        <img src="https://via.placeholder.com/345x485" alt="Худеем правильно!">
+      <li>
+        <img src="https://via.placeholder.com/345x485" alt="Худеем правильно!" />
         <div>02</div>
-        <div class="slide-title">Худеем правильно!</div>
+        <h2>Худеем правильно!</h2>
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
         <a href="#">Подробнее</a>
-        <div>
-          <div>48 часов</div>
-          <div>Без подзарядки</div>
-        </div>
-      </div>
+        <table>
+          <tbody>
+            <tr>
+              <th>48 часов</th>
+            </tr>
+            <tr>
+              <td>Без подзарядки</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
 
       <!-- третий слайд -->
-      <div>
-        <img src="https://via.placeholder.com/526x334" alt="Порхает как бабочка, жалит как пчела!">
+      <li>
+        <img src="https://via.placeholder.com/526x334" alt="Порхает как бабочка, жалит как пчела!" />
         <div>03</div>
-        <div class="slide-title">Порхает как бабочка, жалит как пчела!</div>
-        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-        </p>
+        <h2>Порхает как бабочка, жалит как пчела!</h2>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
         <a href="#">Подробнее</a>
-        <div>
-          <div>800 м</div>
-          <div>Дальность полета</div>
-        </div>
-        <div>
-          <div>50 м</div>
-          <div>Радиус поражения</div>
-        </div>
-      </div>
-
-      <!-- буллеты слайдера -->
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-    </div>
+        <table>
+          <tbody>
+            <tr>
+              <th>800 м</th>
+              <th>50 м</th>
+            </tr>
+            <tr>
+              <td>Дальность полета</td>
+              <td>Радиус поражения</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+          <!-- буллеты слайдера -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </header>
   <main>
-
     <!-- popular -->
-    <nav>
       <ul>
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-        <li><a href="#">Фитнес-браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
+        <li>
+          <a href="#">Виртуальная реальность</a>
+        </li>
+        <li>
+          <a href="#">Моноподы для селфи</a>
+        </li>
+        <li>
+          <a href="#">Экшн-камеры</a>
+        </li>
+        <li>
+          <a href="#">Фитнес-браслеты</a>
+        </li>
+        <li>
+          <a href="#">Умные часы</a>
+        </li>
+        <li>
+          <a href="#">Квадрокоптеры</a>
+        </li>
       </ul>
-    </nav>
 
     <!-- services -->
     <section>
       <div>
         <ul>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Кредит</a></li>
+          <li>
+            <button>Доставка</button>
+          </li>
+          <li>
+            <button>Гарантия</button>
+          </li>
+          <li>
+            <button>Кредит</button>
+          </li>
         </ul>
       </div>
-      <div>
+    <ul>
+      <li>
         <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему
-          подъезду совершенно бесплатно! Ведь мы неплохо
-          заработаем, поднимая его на ваш этаж.</p>
-      </div>
-      <div>
+        Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+      </li>
+      <li>
         <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
-          не переживайте, мы выдадим вам новый.
-          Товар, не дом, конечно же.</p>
-      </div>
-      <div>
+        Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+      </li>
+      <li>
         <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты
-          подберут для вас наиболее выгодные
-          условия кредита. Выгодные для нашего банка, разумеется.</p>
-      </div>
+        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+      </li>
+    </ul>
     </section>
 
     <!-- logotypes -->
-    <div>
-      <img src="https://via.placeholder.com/260x100" alt="dji">
-      <img src="https://via.placeholder.com/260x100" alt="spgadgets">
-      <img src="https://via.placeholder.com/260x100" alt="gopro">
-      <img src="https://via.placeholder.com/260x100" alt="vive">
-    </div>
+    <ul>
+      <li>
+        <img src="https://via.placeholder.com/260x100" alt="dji" />
+      </li>
+      <li>
+        <img src="https://via.placeholder.com/260x100" alt="spgadgets" />
+      </li>
+      <li>
+        <img src="https://via.placeholder.com/260x100" alt="gopro" />
+      </li>
+      <li>
+        <img src="https://via.placeholder.com/260x100" alt="vive" />
+      </li>
+    </ul>
 
     <!-- info -->
     <section>
       <div>
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-          компаниями:</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul>
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <p><a href="#">Подробнее о нас</a></p>
+        <a href="#">Подробнее о нас</a>
       </div>
       <div>
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
-          Всякое бывает.</p>
-        <a href="#"><img src="https://via.placeholder.com/560x222" alt="Мы на карте"></a>
-        <p><a href="#">Напишите нам</a></p>
+        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+        <a href="#">
+          <img src="https://via.placeholder.com/560x222" alt="Мы на карте" />
+        </a>
+        <a href="#">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -169,50 +209,73 @@
     <!-- Первая строка футера -->
     <div>
       <div>
-        <img src="https://via.placeholder.com/163x34" alt="Device logo">
+        <img src="https://via.placeholder.com/163x34" alt="Device logo" />
       </div>
       <div>
         <ul>
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li>
+            <a href="#">Войти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
         </ul>
       </div>
     </div>
 
     <!-- Вторая строка футера -->
     <div>
-      <p>г. Москва, ул. Строителей, 15</p>
+      г. Москва, ул. Строителей, 15
     </div>
     <div>
       <ul>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
       </ul>
     </div>
     <div>
-      <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+      Тел.:
+        <a href="tel:+74954959595">+7 (495) 495-95-95</a>
     </div>
 
     <!-- Третья строка футера -->
-    <div>
-      <img src="https://via.placeholder.com/80x7" alt="palka">
-      <!-- этот элемент разумнее заменить к примеру div c нужной заливкой, а не img -->
-    </div>
+    <!-- <div>
+      <img src="https://via.placeholder.com/80x7" alt="palka" />
+    </div> -->
     <div>
       <ul>
-        <li><a href="#"><img src="https://via.placeholder.com/32x32" alt="Facebook"></a></li>
-        <li><a href="#"><img src="https://via.placeholder.com/32x32" alt="Instagram"></a></li>
-        <li><a href="#"><img src="https://via.placeholder.com/32x32" alt="Twitter"></a></li>
+        <li>
+          <a href="#">
+            <img src="https://via.placeholder.com/32x32" alt="Facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://via.placeholder.com/32x32" alt="Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://via.placeholder.com/32x32" alt="Twitter" />
+          </a>
+        </li>
       </ul>
     </div>
     <div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/27x34"
-          alt="HTML Academy Logo"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="https://via.placeholder.com/27x34" alt="HTML Academy Logo" />
+      </a>
     </div>
-
   </footer>
 </body>
-
 </html>
