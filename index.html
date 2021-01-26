@@ -9,12 +9,15 @@
 <body>
   <header>
     <h1>Device</h1>
+      <a>
+        <img src="https://via.placeholder.com/163x35" alt="Device logo" />
+      </a>
+  
+    <!-- <form action="https://echo.htmlacademy.ru" method="post"> -->
+    <input type="text" name="top-search" placeholder="Поиск по сайту" />
+    <!-- </form> -->
+  
     <ul>
-      <li>
-        <!-- <form action="https://echo.htmlacademy.ru" method="post"> -->
-        <input type="text" name="top-search" placeholder="Поиск по сайту" />
-        <!-- </form> -->
-      </li>
       <li>
         <a href="#">Войти</a>
       </li>
@@ -25,31 +28,33 @@
         <a href="#">Корзина</a>
       </li>
     </ul>
+    
+    <nav>
+        <ul>
+          <li>
+            <a href="catalog.html">Каталог товаров</a></li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
 
-    <ul>
-      <li>
-        <a href="catalog.html">Каталог товаров</a></li>
-      <li>
-        <a href="#">Доставка</a>
-      </li>
-      <li>
-        <a href="#">Гарантия</a>
-      </li>
-      <li>
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-
-
-    <!-- Слайдер -->
+  <section><!-- Слайдер -->
+    <h2>Самые интересные предложения</h2>
     <ul>
       <!-- первый слайд -->
       <li>
-        <figure>
-          <img src="https://via.placeholder.com/384x486" alt="Делай селфи как Бен Стиллер!" />
-          <figcaption>
-          <div>01</div>
-          <h2>Делай селфи как Бен Стиллер!</h2>
+          <img src="https://via.placeholder.com/384x486" alt="Необычная селфи палка" />
+          <div>
+          <span>01</span>
+          <p>Делай селфи, как Бен Стиллер!</p>
           <a href="#">Подробнее</a>
           <table>
             <tbody>
@@ -65,17 +70,15 @@
               </tr>
             </tbody>
           </table>
-          </figcaption>
-      </figure>
+          </div>
       </li>
 
       <!-- второй слайд -->
       <li>
-        <figure>
           <img src="https://via.placeholder.com/345x485" alt="Худеем правильно!" />
-        <figcaption>
-          <div>02</div>
-          <h2>Худеем правильно!</h2>
+        <div>
+          <span>02</span>
+          <p>Худеем правильно!</p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="#">Подробнее</a>
           <table>
@@ -88,17 +91,15 @@
               </tr>
             </tbody>
           </table>
-        </figcaption>  
-        </figure>
+        </div>  
       </li>
 
       <!-- третий слайд -->
       <li>
-        <figure>
           <img src="https://via.placeholder.com/526x334" alt="Порхает как бабочка, жалит как пчела!" />
-          <figcaption>
-          <div>03</div>
-          <h2>Порхает как бабочка, жалит как пчела!</h2>
+          <div>
+          <span>03</span>
+          <p>Порхает как бабочка, жалит как пчела!</p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a href="#">Подробнее</a>
           <table>
@@ -113,18 +114,17 @@
               </tr>
             </tbody>
           </table>
-          </figcaption>
-      </figure>
+          </div>
       </li>
+    </ul>
 
-    </ul>
-          <!-- буллеты слайдера -->
-    <ul>
+    <ul><!-- буллеты слайдера -->
       <li></li>
       <li></li>
       <li></li>
     </ul>
-  </header>
+  </section><!-- конец слайдера -->
+
   <main>
     <!-- popular -->
       <ul>
@@ -150,48 +150,55 @@
 
     <!-- services -->
     <section>
-      <div>
+      <h2>Информация</h2>
         <ul>
           <li>
-            <button>Доставка</button>
+            <button type="button">Доставка</button>
           </li>
           <li>
-            <button>Гарантия</button>
+            <button type="button">Гарантия</button>
           </li>
           <li>
-            <button>Кредит</button>
+            <button type="button">Кредит</button>
           </li>
         </ul>
-      </div>
-    <ul>
-      <li>
-        <h2>Доставка</h2>
-        Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-      </li>
-      <li>
-        <h2>Гарантия</h2>
-        Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-      </li>
-      <li>
-        <h2>Кредит</h2>
-        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-      </li>
-    </ul>
+        <ul>
+          <li>
+            <h3>Доставка</h3>
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+          </li>
+          <li>
+            <h3>Гарантия</h3>
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+          </li>
+          <li>
+            <h3>Кредит</h3>
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+          </li>
+        </ul>
     </section>
 
     <!-- logotypes -->
     <ul>
       <li>
-        <img src="https://via.placeholder.com/260x100" alt="dji" />
+        <a href="#">
+          <img src="https://via.placeholder.com/260x100" alt="dji" />
+        </a>
       </li>
       <li>
-        <img src="https://via.placeholder.com/260x100" alt="spgadgets" />
+        <a href="#">
+          <img src="https://via.placeholder.com/260x100" alt="spgadgets" />
+        </a>
       </li>
       <li>
-        <img src="https://via.placeholder.com/260x100" alt="gopro" />
+        <a href="#">
+          <img src="https://via.placeholder.com/260x100" alt="gopro" />
+        </a>
       </li>
       <li>
-        <img src="https://via.placeholder.com/260x100" alt="vive" />
+        <a href="#">
+          <img src="https://via.placeholder.com/260x100" alt="vive" />
+        </a>
       </li>
     </ul>
 
@@ -218,13 +225,18 @@
       </div>
     </section>
   </main>
+
+
+
   <footer>
     <!-- Первая строка футера -->
     <div>
       <div>
-        <img src="https://via.placeholder.com/163x34" alt="Device logo" />
+        <a>
+          <img src="https://via.placeholder.com/163x34" alt="Device logo" />
+        </a>
       </div>
-      <div>
+
         <ul>
           <li>
             <a href="#">Войти</a>
@@ -236,14 +248,11 @@
             <a href="#">Корзина</a>
           </li>
         </ul>
-      </div>
     </div>
 
     <!-- Вторая строка футера -->
     <div>
-      г. Москва, ул. Строителей, 15
-    </div>
-    <div>
+      <p>г. Москва, ул. Строителей, 15</p>
       <ul>
         <li>
           <a href="#">Доставка</a>
@@ -255,16 +264,13 @@
           <a href="#">Контакты</a>
         </li>
       </ul>
-    </div>
-    <div>
-      Тел.:
+
+      <p>Тел.:
         <a href="tel:+74954959595">+7 (495) 495-95-95</a>
+      </p>
     </div>
 
     <!-- Третья строка футера -->
-    <!-- <div>
-      <img src="https://via.placeholder.com/80x7" alt="palka" />
-    </div> -->
     <div>
       <ul>
         <li>
@@ -283,8 +289,6 @@
           </a>
         </li>
       </ul>
-    </div>
-    <div>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="https://via.placeholder.com/27x34" alt="HTML Academy Logo" />
       </a>
