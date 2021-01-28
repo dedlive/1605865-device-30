@@ -54,8 +54,12 @@
     
     <!-- крошки -->
     <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог товаров</a></li>
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="catalog.html">Каталог товаров</a>
+      </li>
       <li>Моноподы для селфи</li>
     </ul>
   <!-- начало фильтра -->  
@@ -69,23 +73,23 @@
         <legend>Цвет</legend>
         <ul>
           <li>
-            <input type="checkbox" name="black" id="black-checkbox" checked>
+            <input type="checkbox" name="black" id="black-checkbox" value="Чёрный" checked>
             <label for="black-checkbox">Чёрный</label>
           </li>
           <li>
-            <input type="checkbox" name="white" id="white-checkbox">
+            <input type="checkbox" name="white" id="white-checkbox" value="Белый">
             <label for="white-checkbox">Белый</label>
           </li>
           <li>
-            <input type="checkbox" name="blue" id="blue-checkbox" checked>
+            <input type="checkbox" name="blue" id="blue-checkbox" value="Синий" checked>
             <label for="blue-checkbox">Синий</label>
           </li>
           <li>
-            <input type="checkbox" name="red" id="red-checkbox" checked>
+            <input type="checkbox" name="red" id="red-checkbox" value="Красный" checked>
             <label for="red-checkbox">Красный</label>
           </li>
           <li>
-            <input type="checkbox" name="pink" id="pink-checkbox">
+            <input type="checkbox" name="pink" id="pink-checkbox" value="Розовый">
             <label for="pink-checkbox">Розовый</label>
           </li>
         </ul>
@@ -145,26 +149,26 @@
       <li>
         <button type="button">в корзину</button> <!-- button, а не <a>, потому что никуда не ведёт -->
         <button type="button">Добавить к сравнению</button>
-        Любительская селфи-палка
+        <p>Любительская селфи-палка</p>
         <span>1 100 руб.</span>
       </li>
       <li>
         <button type="button">в корзину</button>
         <button type="button">Добавить к сравнению</button>
-        Профессиональная селфи-палка 
+        <p>Профессиональная селфи-палка</p>
         <span>1 100 руб.</span>
       </li>
       <li>
         <button type="button">в корзину</button>
         <button type="button">Добавить к сравнению</button>
-        Непотопляемая селфи-палка
+        <p>Непотопляемая селфи-палка</p>
         <span>1 500 руб.</span>
       </li>
       <li>
         <button type="button">в корзину</button>
         <button type="button">Добавить к сравнению</button>
         <div>new</div>
-        Селфи-палка «Следуй за мной»
+        <p>Селфи-палка «Следуй за мной»</p>
         <span>1 500 руб.</span>
       </li>
     </ul>
@@ -197,11 +201,9 @@
   <footer>
     <!-- Первая строка футера -->
     <div>
-      <div>
         <a>
           <img src="https://via.placeholder.com/163x34" alt="Device logo" />
         </a>
-      </div>
 
         <ul>
           <li>
