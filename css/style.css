@@ -1,33 +1,583 @@
+:root {
+  --black: #000000; /* чёрный */
+  --dark: #363636; /* фон футера */
+  --grey-light: #E5E5E5; /* фон фильтров */
+  --white: #FFFFFF; /* белый */
+  --yellow-dark: #F0C52E; /* желт кнопка при наведении */
+  --special-yellow: #F7E296; /* фон хидера, кнопки */
+  --special-grey: #DCDCDC; /* Фон для "Фильтр:" */
+  --paginator-grey: #EBEBEB; /* фон пагинатора */
+  --paginator-dark-grey: #D9D9D9; /* кнопки пагинатора при наведении */
+  --basic-font: "Open Sans", "Arial", sans-serif;
+  --additional-font: "Gilroy", "Tahoma", sans-serif;
+}
+
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: url('../fonts/gilroyextrabold.woff.woff2') format('woff2'),
-    url('../fonts/gilroyextrabold.woff.woff') format('woff');
-    font-weight: normal;
+    font-family: "Gilroy";
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+    font-weight: 700;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'gilroylight';
-    src: url('../fonts/gilroylight.woff2') format('woff2'),
-    url('../fonts/gilroylight.woff') format('woff');
-    font-weight: normal;
+    font-family: "Gilroy";
+    src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+    font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'opensans';
-    src: url('../fonts/opensans.woff2') format('woff2'),
-    url('../fonts/opensans.woff') format('woff');
-    font-weight: normal;
+    font-family: "Open Sans";
+    src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+    font-weight: 500;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'opensanslight';
-    src: url('../fonts/opensanslight.woff2') format('woff2'),
-    url('../fonts/opensanslight.woff') format('woff');
-    font-weight: normal;
+    font-family: "Open Sans";
+    src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+    font-weight: 200;
     font-style: normal;
+}
+.page-body {
+  color: var(--black);
+  font-family: var(--basic-font);
+}
+
+.page-body a {
+  text-decoration: none;
+}
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/* для всех стилизованных кнопок */
+.btn {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+/* Main header */
+.main-header {
+  color: var(--black);
+  background-color: var(--special-yellow);
+}
+
+.header-search {/* Поиск по сайту */
+  background-color: var(--special-yellow);
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--black);
+  opacity: 0.3;
+}
+
+/* общий класс для ссылок в .user-navigation */
+.user-navigation .link {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.user-navigation .enter-link {
+
+}
+
+.user-navigation .enter-link:hover {
+opacity: 0.6;
+}
+
+.user-navigation .enter-link:active {
+  opacity: 0.3;
+  }
+
+.user-navigation .compare-link {
+
+}
+
+.user-navigation .compare-link:hover {
+  opacity: 0.6;
+}
+
+.user-navigation .compare-link:active {
+  opacity: 0.3;
+}
+
+.user-navigation .cart-link {
+
+}
+
+.user-navigation .cart-link:hover {
+  opacity: 0.6;
+}
+
+.user-navigation .cart-link:active {
+  opacity: 0.3;
+}
+
+.site-navigation-link {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.site-navigation-link:hover {
+  opacity: 0.6;
+}
+
+.site-navigation-link:active {
+  opacity: 0.3;
+}
+
+
+.slide span { /* номер слайда */
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.slide-title {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--black);
+}
+
+.slide-description {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+/* !!! Кнопки, которые выгл одинаково - вынести в отд класс */
+.slide-link {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.slide-link:hover {
+  opacity: 0.6;
+}
+
+.slide-link:active {
+  opacity: 0.3;
+}
+
+
+/* !!! Вынести повторяющиеся свойства в класс */
+.value {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: var(--black);
+}
+
+.parameter {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: var(--black);
+}
+
+.categories-link {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.categories-link:hover {
+  opacity: 0.6;
+}
+
+.categories-link:active {
+  opacity: 0.3;
+}
+
+.services {
+  background-color: var(--grey-light);
+}
+
+.services-button {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--special-yellow);
+}
+
+.services-button:active {
+  opacity: 0.3;
+}
+
+.services-title {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  color: var(--black);
+}
+
+.services-description {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: var(--black);
+}
+
+.information-tagline {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  color: var(--black);
+}
+
+.information-text {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--black);
+}
+
+.delivery-method-item {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--black);
+}
+
+.main-footer {
+  background-color: var(--dark);
+}
+
+.footer-user-menu .link {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--white);
+  opacity: 0.7;
+}
+
+.footer-user-menu .link:hover {
+  opacity: 1.0;
+}
+
+.footer-user-menu .link:active {
+  opacity: 0.3;
+}
+
+.footer-address {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.footer-services-link {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.footer-services-link:hover {
+  opacity: 0.6;
+}
+
+.footer-services-link:active {
+  opacity: 0.3;
+}
+
+.footer-phone {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.footer-phone-link {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.footer-phone-link:hover {
+  opacity: 0.6;
+}
+
+.footer-phone-link:active {
+  opacity: 0.3;
+}
+
+/* элементы каталога */
+.user-info-link {
+
+}
+
+.user-info-link:hover {
+  opacity: 0.6;
+}
+
+.user-info-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumb-link {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.breadcrumb-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumb-link:active {
+  opacity: 0.1;
+}
+
+.breadcrumb-item {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.filter-tagline {
+  background-color: var(--special-grey);
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.filter {
+  background-color: var(--grey-light);
+}
+
+.filter-legend {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  color: var(--black);
+}
+
+.filter-label {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--black);
+}
+
+.filter-button {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.sorting {
+  background-color: var(--grey-light);
+}
+
+.sorting-tagline {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.sorting-method-link-active {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--black);
+}
+
+.sorting-method-link {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.goods-title {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--black);
+}
+
+.goods-price {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: var(--black);
+}
+
+.cart-button {
+font-family: var(--additional-font);
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--black);
+}
+
+.cart-button:active {
+  opacity: 0.3;
+  }
+
+.goods-compare-button {
+  font-family: var(--basic-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: var(--black);
+}
+
+.paginator {
+  background: var(--paginator-grey);
+}
+
+.paginator-link {
+  font-family: var(--additional-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.paginator-link-back,
+.paginator-link-forward,
+.paginator-link-current {
+opacity: 1;
 }
